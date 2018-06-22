@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:text="NEW YORK"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColor="#e1d5d7"
+            android:textAppearance="@style/Base.CardView"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

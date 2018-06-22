@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_gradient"
+    tools:context="com.example.vartikajain.advancetourguide.activities.VenueDetailActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:text="Singapore"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#1df1ea"
+        android:textAppearance=
+            "@style/Base.TextAppearance.AppCompat.Headline"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvCity"
+            android:text="City"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvState"
+            android:text="State"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvCountry"
+            android:text="Country"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="Rating :  "
+        android:textColor="#f1f0f0"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvRating"
+        android:text="7.8"
+        android:textColor="#f1f0f0"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Verified by Owner :  "
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvVerified"
+            android:text="T/F"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+       <ImageView
+           android:src="@drawable/twitter"
+           android:layout_weight="1"
+           android:scaleType="fitCenter"
+           android:layout_width="0dp"
+           android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/facebook"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/instagram"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tvTwitter"
+            android:text="Twitter"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvFacebook"
+            android:text="Facebook"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvInstagram"
+            android:text="Instagram"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnEvents"
+        android:text="Events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

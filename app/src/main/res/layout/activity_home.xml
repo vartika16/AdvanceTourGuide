@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_gradient"
+    tools:context="com.example.vartikajain.advancetourguide.activities.HomeActivity">
+
+    <TextView
+        android:text="Welcome To Advance Tour Gradient"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#f1f0f0"
+        android:textAppearance=
+            "@style/Base.TextAppearance.AppCompat.Headline"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_my_location_pink_a200_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvCurrentLoc"
+            android:text="Use Current Location"
+            android:textColor="#f1f0f0"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_width="240dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:text="Popular Cities across the World"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#ef385f"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCities"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
